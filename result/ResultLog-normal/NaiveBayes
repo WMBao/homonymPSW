@@ -1,0 +1,200 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.bayes.NaiveBayes -batch-size 20
+Relation:     normal-all
+Instances:    50
+Attributes:   23
+              Dig1
+              Down1
+              Up1
+              Dig2
+              Down2
+              Up2
+              Dig3
+              Down3
+              Up3
+              Dig4
+              Down4
+              Up4
+              Dig5
+              Down5
+              Up5
+              Dig6
+              Down6
+              Up6
+              MeansOfAll
+              MeansOfDowns
+              MeansOfUps
+              MeansOfPress
+              Tag
+Test mode:    6-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Naive Bayes Classifier
+
+                   Class
+Attribute         Reject Authorize
+                  (0.58)    (0.42)
+===================================
+Dig1
+  mean             0.2759         0
+  std. dev.        1.4597    1.3333
+  weight sum           29        21
+  precision             8         8
+
+Down1
+  mean                  0         0
+  std. dev.        0.0017    0.0017
+  weight sum           29        21
+  precision          0.01      0.01
+
+Up1
+  mean           181.6644   84.0984
+  std. dev.      226.0506   14.9497
+  weight sum           29        21
+  precision       29.9333   29.9333
+
+Dig2
+  mean             5.9655         6
+  std. dev.        0.1825    0.1667
+  weight sum           29        21
+  precision             1         1
+
+Down2
+  mean           604.1754  658.1781
+  std. dev.      440.1381   71.6514
+  weight sum           29        21
+  precision       40.6522   40.6522
+
+Up2
+  mean           767.4759  736.6899
+  std. dev.      589.0766   72.3536
+  weight sum           29        21
+  precision       57.5111   57.5111
+
+Dig3
+  mean                  0         0
+  std. dev.        0.0017    0.0017
+  weight sum           29        21
+  precision          0.01      0.01
+
+Down3
+  mean          1446.4468 1360.7082
+  std. dev.      863.3843  125.0216
+  weight sum           29        21
+  precision       79.5957   79.5957
+
+Up3
+  mean          1593.0396 1431.6292
+  std. dev.      920.2929  118.0383
+  weight sum           29        21
+  precision       78.7021   78.7021
+
+Dig4
+  mean             5.8966         6
+  std. dev.        0.5474       0.5
+  weight sum           29        21
+  precision             3         3
+
+Down4
+  mean          1951.9552 2016.9554
+  std. dev.     1020.3071  145.8171
+  weight sum           29        21
+  precision       79.1702   79.1702
+
+Up4
+  mean          2064.5224 2085.0091
+  std. dev.     1015.8309  148.4319
+  weight sum           29        21
+  precision       78.4681   78.4681
+
+Dig5
+  mean                  3         3
+  std. dev.        0.0017    0.0017
+  weight sum           29        21
+  precision          0.01      0.01
+
+Down5
+  mean          2480.6214 2621.9881
+  std. dev.     1135.1832  238.9752
+  weight sum           29        21
+  precision       77.7708   77.7708
+
+Up5
+  mean          2595.8621 2684.9135
+  std. dev.     1156.2781  236.4386
+  weight sum           29        21
+  precision       76.8163   76.8163
+
+Dig6
+  mean                  0         0
+  std. dev.        0.0017    0.0017
+  weight sum           29        21
+  precision          0.01      0.01
+
+Down6
+  mean          3087.1999 3352.7872
+  std. dev.     1203.4301  324.5961
+  weight sum           29        21
+  precision       82.0612   82.0612
+
+Up6
+  mean          3237.7586 3411.6667
+  std. dev.     1257.8716  320.6981
+  weight sum           29        21
+  precision            89        89
+
+MeansOfAll
+  mean          1672.1145 1701.3132
+  std. dev.      781.7371  134.2645
+  weight sum           29        21
+  precision       54.5459   54.5459
+
+MeansOfDowns
+  mean           1601.239 1662.6926
+  std. dev.      741.5409   137.394
+  weight sum           29        21
+  precision       51.1973   51.1973
+
+MeansOfUps
+  mean          1740.8295 1745.1074
+  std. dev.      815.4897  135.2279
+  weight sum           29        21
+  precision       57.8946   57.8946
+
+MeansOfPress
+  mean           141.8368   75.6206
+  std. dev.      101.0267    6.0732
+  weight sum           29        21
+  precision        8.6778    8.6778
+
+
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances          44               88      %
+Incorrectly Classified Instances         6               12      %
+Kappa statistic                          0.7569
+Mean absolute error                      0.1197
+Root mean squared error                  0.3456
+Relative absolute error                 24.5039 %
+Root relative squared error             69.8924 %
+Total Number of Instances               50     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.862    0.095    0.926      0.862    0.893      0.759    0.969     0.980     Reject
+                 0.905    0.138    0.826      0.905    0.864      0.759    0.969     0.958     Authorize
+Weighted Avg.    0.880    0.113    0.884      0.880    0.881      0.759    0.969     0.971     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 25  4 |  a = Reject
+  2 19 |  b = Authorize
+

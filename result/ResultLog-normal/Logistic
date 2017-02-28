@@ -1,0 +1,110 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.Logistic -R 1.0E-8 -M -1 -num-decimal-places 4 -batch-size 20
+Relation:     normal-all
+Instances:    50
+Attributes:   23
+              Dig1
+              Down1
+              Up1
+              Dig2
+              Down2
+              Up2
+              Dig3
+              Down3
+              Up3
+              Dig4
+              Down4
+              Up4
+              Dig5
+              Down5
+              Up5
+              Dig6
+              Down6
+              Up6
+              MeansOfAll
+              MeansOfDowns
+              MeansOfUps
+              MeansOfPress
+              Tag
+Test mode:    6-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+                   Class
+Variable          Reject
+========================
+Dig1              6.5977
+Up1              -0.7101
+Dig2            -119.029
+Down2            -0.0374
+Up2                0.152
+Down3             0.1761
+Up3               0.2235
+Dig4            -17.5938
+Down4            -0.3183
+Up4               -0.262
+Down5             0.0426
+Up5               0.1213
+Down6             0.0003
+Up6               0.0141
+MeansOfAll       -0.0043
+MeansOfDowns      -0.045
+MeansOfUps          0.03
+MeansOfPress      3.7836
+Intercept       630.0501
+
+
+Odds Ratios...
+                   Class
+Variable          Reject
+========================
+Dig1            733.3753
+Up1               0.4916
+Dig2                   0
+Down2             0.9633
+Up2               1.1642
+Down3             1.1925
+Up3               1.2504
+Dig4                   0
+Down4             0.7274
+Up4               0.7695
+Down5             1.0435
+Up5                1.129
+Down6             1.0003
+Up6               1.0142
+MeansOfAll        0.9957
+MeansOfDowns       0.956
+MeansOfUps        1.0304
+MeansOfPress     43.9743
+
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances          42               84      %
+Incorrectly Classified Instances         8               16      %
+Kappa statistic                          0.684 
+Mean absolute error                      0.1689
+Root mean squared error                  0.4041
+Relative absolute error                 34.5752 %
+Root relative squared error             81.7276 %
+Total Number of Instances               50     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.759    0.048    0.957      0.759    0.846      0.704    0.828     0.916     Reject
+                 0.952    0.241    0.741      0.952    0.833      0.704    0.837     0.671     Authorize
+Weighted Avg.    0.840    0.129    0.866      0.840    0.841      0.704    0.832     0.813     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 22  7 |  a = Reject
+  1 20 |  b = Authorize
+

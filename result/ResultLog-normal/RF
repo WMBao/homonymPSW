@@ -1,0 +1,66 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.RandomForest -P 100 -I 100 -num-slots 1 -K 0 -M 1.0 -V 0.001 -S 1
+Relation:     normal-all
+Instances:    50
+Attributes:   23
+              Dig1
+              Down1
+              Up1
+              Dig2
+              Down2
+              Up2
+              Dig3
+              Down3
+              Up3
+              Dig4
+              Down4
+              Up4
+              Dig5
+              Down5
+              Up5
+              Dig6
+              Down6
+              Up6
+              MeansOfAll
+              MeansOfDowns
+              MeansOfUps
+              MeansOfPress
+              Tag
+Test mode:    6-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+RandomForest
+
+Bagging with 100 iterations and base learner
+
+weka.classifiers.trees.RandomTree -K 0 -M 1.0 -V 0.001 -S 1 -do-not-check-capabilities
+
+Time taken to build model: 0.01 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances          45               90      %
+Incorrectly Classified Instances         5               10      %
+Kappa statistic                          0.7961
+Mean absolute error                      0.156 
+Root mean squared error                  0.2622
+Relative absolute error                 31.9304 %
+Root relative squared error             53.0168 %
+Total Number of Instances               50     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.897    0.095    0.929      0.897    0.912      0.797    0.971     0.980     Reject
+                 0.905    0.103    0.864      0.905    0.884      0.797    0.971     0.964     Authorize
+Weighted Avg.    0.900    0.099    0.901      0.900    0.900      0.797    0.971     0.973     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 26  3 |  a = Reject
+  2 19 |  b = Authorize
+

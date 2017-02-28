@@ -1,0 +1,90 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.SGD -F 0 -L 0.01 -R 1.0E-4 -E 500 -C 0.001 -S 1 -batch-size 20
+Relation:     pattern-all
+Instances:    54
+Attributes:   23
+              Dig1
+              Down1
+              Up1
+              Dig2
+              Down2
+              Up2
+              Dig3
+              Down3
+              Up3
+              Dig4
+              Down4
+              Up4
+              Dig5
+              Down5
+              Up5
+              Dig6
+              Down6
+              Up6
+              MeansOfAll
+              MeansOfDowns
+              MeansOfUps
+              MeansOfPress
+              Tag
+Test mode:    6-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Loss function: Hinge loss (SVM)
+
+Squared loss (linear regression)
+
+Tag = 
+
+         0      (normalized) Dig1
+ +       0      (normalized) Down1
+ +       5.6408 (normalized) Up1
+ +       0      (normalized) Dig2
+ +       2.5756 (normalized) Down2
+ +       0.4373 (normalized) Up2
+ +       0      (normalized) Dig3
+ +       0.8288 (normalized) Down3
+ +      -0.2317 (normalized) Up3
+ +       0      (normalized) Dig4
+ +      -0.3898 (normalized) Down4
+ +      -0.7146 (normalized) Up4
+ +       0      (normalized) Dig5
+ +      -0.5988 (normalized) Down5
+ +      -1.0557 (normalized) Up5
+ +       0      (normalized) Dig6
+ +      -0.3742 (normalized) Down6
+ +      -0.8454 (normalized) Up6
+ +       0.0403 (normalized) MeansOfAll
+ +       0.2749 (normalized) MeansOfDowns
+ +      -0.1672 (normalized) MeansOfUps
+ +      -3.1067 (normalized) MeansOfPress
+ -       1.16  
+
+Time taken to build model: 0.02 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances          53               98.1481 %
+Incorrectly Classified Instances         1                1.8519 %
+Kappa statistic                          0.9629
+Mean absolute error                      0.0185
+Root mean squared error                  0.1361
+Relative absolute error                  3.7184 %
+Root relative squared error             27.252  %
+Total Number of Instances               54     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.966    0.000    1.000      0.966    0.982      0.964    0.983     0.984     Reject
+                 1.000    0.034    0.962      1.000    0.980      0.964    0.983     0.962     Authorize
+Weighted Avg.    0.981    0.016    0.982      0.981    0.982      0.964    0.983     0.974     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 28  1 |  a = Reject
+  0 25 |  b = Authorize
+

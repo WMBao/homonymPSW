@@ -1,0 +1,155 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.MultilayerPerceptron -L 0.1 -M 0.1 -N 500 -V 0 -S 2 -E 20 -H 3 -R -num-decimal-places 4 -batch-size 20
+Relation:     pattern-all
+Instances:    54
+Attributes:   23
+              Dig1
+              Down1
+              Up1
+              Dig2
+              Down2
+              Up2
+              Dig3
+              Down3
+              Up3
+              Dig4
+              Down4
+              Up4
+              Dig5
+              Down5
+              Up5
+              Dig6
+              Down6
+              Up6
+              MeansOfAll
+              MeansOfDowns
+              MeansOfUps
+              MeansOfPress
+              Tag
+Test mode:    6-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Sigmoid Node 0
+    Inputs    Weights
+    Threshold    -0.8597404740314549
+    Node 2    4.510823919603842
+    Node 3    -4.595222318672755
+    Node 4    3.0662519357748304
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    0.8404588978126607
+    Node 2    -4.491562955405945
+    Node 3    4.6145828676354945
+    Node 4    -3.0665305351448775
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    0.15115622070567128
+    Attrib Dig1    -0.09513383488543017
+    Attrib Down1    0.03477112044790781
+    Attrib Up1    -4.435418925882579
+    Attrib Dig2    0.027887168893797696
+    Attrib Down2    -2.0707927851032664
+    Attrib Up2    -0.3338363825778112
+    Attrib Dig3    0.003950594193350011
+    Attrib Down3    -0.6225950789618765
+    Attrib Up3    0.23834206072799952
+    Attrib Dig4    0.08668263632497819
+    Attrib Down4    0.5429293961425746
+    Attrib Up4    0.7603392560076345
+    Attrib Dig5    0.04190690636664225
+    Attrib Down5    0.6611175954909785
+    Attrib Up5    1.057275820624218
+    Attrib Dig6    0.0071612978424077794
+    Attrib Down6    0.16411671450333076
+    Attrib Up6    0.6049445746431343
+    Attrib MeansOfAll    0.12207311412256738
+    Attrib MeansOfDowns    -0.06305149891787955
+    Attrib MeansOfUps    0.24634843454535585
+    Attrib MeansOfPress    2.5209750425680553
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    -0.17598446215932118
+    Attrib Dig1    0.09062506873583152
+    Attrib Down1    0.024739806751648954
+    Attrib Up1    4.254803729701959
+    Attrib Dig2    -0.04044389719567442
+    Attrib Down2    1.9665655532906148
+    Attrib Up2    0.22506774463078152
+    Attrib Dig3    -0.008131375279161489
+    Attrib Down3    0.6577661051724015
+    Attrib Up3    -0.2503195848314748
+    Attrib Dig4    -0.088258834170733
+    Attrib Down4    -0.4929196693181227
+    Attrib Up4    -0.7530413964090658
+    Attrib Dig5    0.016673802330238283
+    Attrib Down5    -0.6533284212289947
+    Attrib Up5    -0.9759935228131829
+    Attrib Dig6    0.04771283891496807
+    Attrib Down6    -0.10337054370474215
+    Attrib Up6    -0.4886976805104595
+    Attrib MeansOfAll    -0.09515101672584207
+    Attrib MeansOfDowns    0.05742803850661197
+    Attrib MeansOfUps    -0.2140762618976369
+    Attrib MeansOfPress    -2.563633854983084
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    -0.33606344440566577
+    Attrib Dig1    0.3721689392096456
+    Attrib Down1    0.03080945842624834
+    Attrib Up1    -2.8668340964289127
+    Attrib Dig2    -0.42457475535217304
+    Attrib Down2    -1.779025664379712
+    Attrib Up2    -1.3570038801378232
+    Attrib Dig3    -0.007123657809526826
+    Attrib Down3    -0.6382759105209993
+    Attrib Up3    -0.4197624273005518
+    Attrib Dig4    -0.43185229700056066
+    Attrib Down4    -0.04738779991594811
+    Attrib Up4    0.05406129637031343
+    Attrib Dig5    0.014299894364632623
+    Attrib Down5    0.11454715921249214
+    Attrib Up5    0.2945664246341114
+    Attrib Dig6    -0.045772535366444156
+    Attrib Down6    0.17230633935983833
+    Attrib Up6    0.4875885526668146
+    Attrib MeansOfAll    -0.33052672930420673
+    Attrib MeansOfDowns    -0.3691482412181657
+    Attrib MeansOfUps    -0.3817336516921567
+    Attrib MeansOfPress    0.1688075660252766
+Class Reject
+    Input
+    Node 0
+Class Authorize
+    Input
+    Node 1
+
+
+Time taken to build model: 0.04 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances          53               98.1481 %
+Incorrectly Classified Instances         1                1.8519 %
+Kappa statistic                          0.9629
+Mean absolute error                      0.0579
+Root mean squared error                  0.1633
+Relative absolute error                 11.6299 %
+Root relative squared error             32.7061 %
+Total Number of Instances               54     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.966    0.000    1.000      0.966    0.982      0.964    0.974     0.986     Reject
+                 1.000    0.034    0.962      1.000    0.980      0.964    0.974     0.950     Authorize
+Weighted Avg.    0.981    0.016    0.982      0.981    0.982      0.964    0.974     0.969     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 28  1 |  a = Reject
+  0 25 |  b = Authorize
+

@@ -1,0 +1,295 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.AdaBoostM1 -P 100 -S 1 -I 10 -W weka.classifiers.trees.DecisionStump
+Relation:     pattern-all
+Instances:    54
+Attributes:   23
+              Dig1
+              Down1
+              Up1
+              Dig2
+              Down2
+              Up2
+              Dig3
+              Down3
+              Up3
+              Dig4
+              Down4
+              Up4
+              Dig5
+              Down5
+              Up5
+              Dig6
+              Down6
+              Up6
+              MeansOfAll
+              MeansOfDowns
+              MeansOfUps
+              MeansOfPress
+              Tag
+Test mode:    6-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+AdaBoostM1: Base classifiers and their weights: 
+
+Decision Stump
+
+Classifications
+
+Up1 <= 617.0 : Reject
+Up1 > 617.0 : Authorize
+Up1 is missing : Reject
+
+Class distributions
+
+Up1 <= 617.0
+Reject	Authorize	
+1.0	0.0	
+Up1 > 617.0
+Reject	Authorize	
+0.07407407407407407	0.9259259259259259	
+Up1 is missing
+Reject	Authorize	
+0.5370370370370371	0.46296296296296297	
+
+
+Weight: 3.26
+
+Decision Stump
+
+Classifications
+
+Up6 <= 5019.0 : Authorize
+Up6 > 5019.0 : Reject
+Up6 is missing : Reject
+
+Class distributions
+
+Up6 <= 5019.0
+Reject	Authorize	
+0.4897959183673469	0.5102040816326531	
+Up6 > 5019.0
+Reject	Authorize	
+1.0	5.442709507926685E-17	
+Up6 is missing
+Reject	Authorize	
+0.7596153846153845	0.24038461538461547	
+
+
+Weight: 1.2
+
+Decision Stump
+
+Classifications
+
+Up1 <= 617.0 : Reject
+Up1 > 617.0 : Reject
+Up1 is missing : Reject
+
+Class distributions
+
+Up1 <= 617.0
+Reject	Authorize	
+1.0	0.0	
+Up1 > 617.0
+Reject	Authorize	
+0.6753246753246753	0.3246753246753247	
+Up1 is missing
+Reject	Authorize	
+0.8437499999999997	0.15625000000000025	
+
+
+Weight: 1.69
+
+Decision Stump
+
+Classifications
+
+Up1 <= 617.0 : Reject
+Up1 > 617.0 : Authorize
+Up1 is missing : Reject
+
+Class distributions
+
+Up1 <= 617.0
+Reject	Authorize	
+1.0	0.0	
+Up1 > 617.0
+Reject	Authorize	
+0.27807486631016104	0.7219251336898389	
+Up1 is missing
+Reject	Authorize	
+0.5000000000000003	0.4999999999999996	
+
+
+Weight: 1.43
+
+Decision Stump
+
+Classifications
+
+MeansOfPress <= 301.08333335 : Authorize
+MeansOfPress > 301.08333335 : Reject
+MeansOfPress is missing : Reject
+
+Class distributions
+
+MeansOfPress <= 301.08333335
+Reject	Authorize	
+0.3711180124223601	0.6288819875776399	
+MeansOfPress > 301.08333335
+Reject	Authorize	
+1.0	-8.100020728523586E-18	
+MeansOfPress is missing
+Reject	Authorize	
+0.6903669724770642	0.3096330275229358	
+
+
+Weight: 1.5
+
+Decision Stump
+
+Classifications
+
+Up1 <= 617.0 : Reject
+Up1 > 617.0 : Reject
+Up1 is missing : Reject
+
+Class distributions
+
+Up1 <= 617.0
+Reject	Authorize	
+1.0	0.0	
+Up1 > 617.0
+Reject	Authorize	
+0.6175637393767706	0.3824362606232294	
+Up1 is missing
+Reject	Authorize	
+0.8105706267539756	0.18942937324602435	
+
+
+Weight: 1.45
+
+Decision Stump
+
+Classifications
+
+Up1 <= 617.0 : Reject
+Up1 > 617.0 : Authorize
+Up1 is missing : Authorize
+
+Class distributions
+
+Up1 <= 617.0
+Reject	Authorize	
+1.0	0.0	
+Up1 > 617.0
+Reject	Authorize	
+0.27398408043569306	0.726015919564307	
+Up1 is missing
+Reject	Authorize	
+0.4999999999999997	0.5000000000000002	
+
+
+Weight: 1.46
+
+Decision Stump
+
+Classifications
+
+Up6 <= 5019.0 : Authorize
+Up6 > 5019.0 : Reject
+Up6 is missing : Reject
+
+Class distributions
+
+Up6 <= 5019.0
+Reject	Authorize	
+0.37476205643621247	0.6252379435637875	
+Up6 > 5019.0
+Reject	Authorize	
+0.9999999999999999	8.91858750278553E-17	
+Up6 is missing
+Reject	Authorize	
+0.6918563300142249	0.3081436699857752	
+
+
+Weight: 1.48
+
+Decision Stump
+
+Classifications
+
+Up1 <= 617.0 : Reject
+Up1 > 617.0 : Reject
+Up1 is missing : Reject
+
+Class distributions
+
+Up1 <= 617.0
+Reject	Authorize	
+1.0	0.0	
+Up1 > 617.0
+Reject	Authorize	
+0.618701870187019	0.38129812981298095	
+Up1 is missing
+Reject	Authorize	
+0.8110246962247554	0.18897530377524469	
+
+
+Weight: 1.46
+
+Decision Stump
+
+Classifications
+
+Up1 <= 617.0 : Reject
+Up1 > 617.0 : Authorize
+Up1 is missing : Authorize
+
+Class distributions
+
+Up1 <= 617.0
+Reject	Authorize	
+1.0	0.0	
+Up1 > 617.0
+Reject	Authorize	
+0.2743545665820144	0.7256454334179856	
+Up1 is missing
+Reject	Authorize	
+0.49999999999999994	0.5000000000000001	
+
+
+Weight: 1.46
+
+Number of performed Iterations: 10
+
+
+Time taken to build model: 0.01 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances          53               98.1481 %
+Incorrectly Classified Instances         1                1.8519 %
+Kappa statistic                          0.9629
+Mean absolute error                      0.0288
+Root mean squared error                  0.1418
+Relative absolute error                  5.7898 %
+Root relative squared error             28.3916 %
+Total Number of Instances               54     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.966    0.000    1.000      0.966    0.982      0.964    1.000     1.000     Reject
+                 1.000    0.034    0.962      1.000    0.980      0.964    1.000     1.000     Authorize
+Weighted Avg.    0.981    0.016    0.982      0.981    0.982      0.964    1.000     1.000     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 28  1 |  a = Reject
+  0 25 |  b = Authorize
+

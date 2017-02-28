@@ -1,0 +1,204 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.LogitBoost -P 100 -L -1.7976931348623157E308 -H 1.0 -Z 3.0 -O 1 -E 1 -S 1 -I 10 -W weka.classifiers.trees.DecisionStump -batch-size
+Relation:     normal-all
+Instances:    50
+Attributes:   23
+              Dig1
+              Down1
+              Up1
+              Dig2
+              Down2
+              Up2
+              Dig3
+              Down3
+              Up3
+              Dig4
+              Down4
+              Up4
+              Dig5
+              Down5
+              Up5
+              Dig6
+              Down6
+              Up6
+              MeansOfAll
+              MeansOfDowns
+              MeansOfUps
+              MeansOfPress
+              Tag
+Test mode:    6-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+LogitBoost: Base classifiers and their weights: 
+
+Iteration 1
+	Class 1 (Tag=Reject)
+
+Decision Stump
+
+Classifications
+
+MeansOfPress <= 82.75 : -1.8
+MeansOfPress > 82.75 : 1.7333333333333334
+MeansOfPress is missing : 0.32
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 2
+	Class 1 (Tag=Reject)
+
+Decision Stump
+
+Classifications
+
+Down5 <= 2278.0 : 1.4137386805880243
+Down5 > 2278.0 : -0.5382406483722121
+Down5 is missing : 0.09910462905255342
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 3
+	Class 1 (Tag=Reject)
+
+Decision Stump
+
+Classifications
+
+Up2 <= 822.5 : -0.5850004847935367
+Up2 > 822.5 : 1.3449636113859704
+Up2 is missing : 0.19784859151268694
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 4
+	Class 1 (Tag=Reject)
+
+Decision Stump
+
+Classifications
+
+Down2 <= 531.0 : 1.2746456923595653
+Down2 > 531.0 : -0.5688996184307163
+Down2 is missing : 0.16012844151479216
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 5
+	Class 1 (Tag=Reject)
+
+Decision Stump
+
+Classifications
+
+MeansOfPress <= 88.5 : -0.4584160102288649
+MeansOfPress > 88.5 : 1.125273200474599
+MeansOfPress is missing : 0.2216680308769013
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 6
+	Class 1 (Tag=Reject)
+
+Decision Stump
+
+Classifications
+
+Up2 <= 822.5 : -0.43691168284229215
+Up2 > 822.5 : 1.1297735554414208
+Up2 is missing : 0.2305986116455088
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 7
+	Class 1 (Tag=Reject)
+
+Decision Stump
+
+Classifications
+
+Down2 <= 576.5 : 1.104507904595885
+Down2 > 576.5 : -0.4695968676829132
+Down2 is missing : 0.11034781168899369
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 8
+	Class 1 (Tag=Reject)
+
+Decision Stump
+
+Classifications
+
+Down6 <= 2967.0 : 1.2674457366016572
+Down6 > 2967.0 : -0.315062312854876
+Down6 is missing : 0.16342272718983505
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 9
+	Class 1 (Tag=Reject)
+
+Decision Stump
+
+Classifications
+
+Down3 <= 1690.0 : -0.40364840569890054
+Down3 > 1690.0 : 1.0999775093574908
+Down3 is missing : 0.137918093410461
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 10
+	Class 1 (Tag=Reject)
+
+Decision Stump
+
+Classifications
+
+MeansOfPress <= 77.75 : -1.074956858775959
+MeansOfPress > 77.75 : 0.46059436922886327
+MeansOfPress is missing : 0.17812517498607086
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+Number of performed iterations: 10
+
+
+Time taken to build model: 0.01 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances          46               92      %
+Incorrectly Classified Instances         4                8      %
+Kappa statistic                          0.8358
+Mean absolute error                      0.0947
+Root mean squared error                  0.2348
+Relative absolute error                 19.3918 %
+Root relative squared error             47.4914 %
+Total Number of Instances               50     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.931    0.095    0.931      0.931    0.931      0.836    0.984     0.989     Reject
+                 0.905    0.069    0.905      0.905    0.905      0.836    0.984     0.979     Authorize
+Weighted Avg.    0.920    0.084    0.920      0.920    0.920      0.836    0.984     0.985     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 27  2 |  a = Reject
+  2 19 |  b = Authorize
+

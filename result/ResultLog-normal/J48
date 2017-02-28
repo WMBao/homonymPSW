@@ -1,0 +1,71 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.J48 -C 0.25 -M 2 -batch-size 20
+Relation:     normal-all
+Instances:    50
+Attributes:   23
+              Dig1
+              Down1
+              Up1
+              Dig2
+              Down2
+              Up2
+              Dig3
+              Down3
+              Up3
+              Dig4
+              Down4
+              Up4
+              Dig5
+              Down5
+              Up5
+              Dig6
+              Down6
+              Up6
+              MeansOfAll
+              MeansOfDowns
+              MeansOfUps
+              MeansOfPress
+              Tag
+Test mode:    6-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+
+MeansOfPress <= 82.5: Authorize (20.0/1.0)
+MeansOfPress > 82.5: Reject (30.0/2.0)
+
+Number of Leaves  : 	2
+
+Size of the tree : 	3
+
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances          46               92      %
+Incorrectly Classified Instances         4                8      %
+Kappa statistic                          0.8336
+Mean absolute error                      0.1312
+Root mean squared error                  0.2782
+Relative absolute error                 26.8638 %
+Root relative squared error             56.2677 %
+Total Number of Instances               50     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.966    0.143    0.903      0.966    0.933      0.837    0.869     0.855     Reject
+                 0.857    0.034    0.947      0.857    0.900      0.837    0.869     0.831     Authorize
+Weighted Avg.    0.920    0.097    0.922      0.920    0.919      0.837    0.869     0.845     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 28  1 |  a = Reject
+  3 18 |  b = Authorize
+

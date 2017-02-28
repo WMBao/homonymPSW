@@ -1,0 +1,128 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.MultilayerPerceptron -L 0.1 -M 0.1 -N 500 -V 0 -S 2 -E 20 -H 2 -R -num-decimal-places 4 -batch-size 20
+Relation:     normal-all
+Instances:    50
+Attributes:   23
+              Dig1
+              Down1
+              Up1
+              Dig2
+              Down2
+              Up2
+              Dig3
+              Down3
+              Up3
+              Dig4
+              Down4
+              Up4
+              Dig5
+              Down5
+              Up5
+              Dig6
+              Down6
+              Up6
+              MeansOfAll
+              MeansOfDowns
+              MeansOfUps
+              MeansOfPress
+              Tag
+Test mode:    6-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Sigmoid Node 0
+    Inputs    Weights
+    Threshold    -2.9558965775690766
+    Node 2    6.201176288760042
+    Node 3    6.27399807304446
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    2.955806705624187
+    Node 2    -6.2009367342056825
+    Node 3    -6.27383327285676
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    0.5002539772207686
+    Attrib Dig1    0.19983888436427658
+    Attrib Down1    0.004020903703059478
+    Attrib Up1    0.9212683459842337
+    Attrib Dig2    -1.9858293013417383
+    Attrib Down2    -1.1841396119152023
+    Attrib Up2    0.12120899466035906
+    Attrib Dig3    -0.016630238099506416
+    Attrib Down3    0.12049200385567568
+    Attrib Up3    0.7934199423772358
+    Attrib Dig4    -0.20093059318639864
+    Attrib Down4    -1.512319702377161
+    Attrib Up4    -1.308122720052371
+    Attrib Dig5    0.022259935969537695
+    Attrib Down5    -3.461005983005146
+    Attrib Up5    -2.8744526036657083
+    Attrib Dig6    0.040485645127254985
+    Attrib Down6    -2.2245939797960417
+    Attrib Up6    -1.5869543293426178
+    Attrib MeansOfAll    -1.4715622178382435
+    Attrib MeansOfDowns    -1.8727593160104223
+    Attrib MeansOfUps    -1.0242054908139722
+    Attrib MeansOfPress    4.6405237309413305
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    2.074645385271694
+    Attrib Dig1    -1.2263432588287544
+    Attrib Down1    -0.04893684368770687
+    Attrib Up1    1.0197450731876625
+    Attrib Dig2    0.288192811636455
+    Attrib Down2    -4.31988774053759
+    Attrib Up2    -1.9324290670785143
+    Attrib Dig3    0.005997426894196592
+    Attrib Down3    1.936183163953067
+    Attrib Up3    2.8038753743452385
+    Attrib Dig4    1.1856032979113524
+    Attrib Down4    0.2807494666499406
+    Attrib Up4    0.6237272123043446
+    Attrib Dig5    0.025262652597337232
+    Attrib Down5    1.342864188959631
+    Attrib Up5    1.9590191443488503
+    Attrib Dig6    -0.030210545616390708
+    Attrib Down6    -0.4196892704368756
+    Attrib Up6    0.3723557144505193
+    Attrib MeansOfAll    0.8198273671944639
+    Attrib MeansOfDowns    0.4393119835551386
+    Attrib MeansOfUps    1.1505034923630908
+    Attrib MeansOfPress    5.623573403830962
+Class Reject
+    Input
+    Node 0
+Class Authorize
+    Input
+    Node 1
+
+
+Time taken to build model: 0.03 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances          38               76      %
+Incorrectly Classified Instances        12               24      %
+Kappa statistic                          0.532 
+Mean absolute error                      0.2431
+Root mean squared error                  0.3543
+Relative absolute error                 49.7671 %
+Root relative squared error             71.6573 %
+Total Number of Instances               50     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.655    0.095    0.905      0.655    0.760      0.560    0.893     0.933     Reject
+                 0.905    0.345    0.655      0.905    0.760      0.560    0.893     0.859     Authorize
+Weighted Avg.    0.760    0.200    0.800      0.760    0.760      0.560    0.893     0.902     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 19 10 |  a = Reject
+  2 19 |  b = Authorize
+
