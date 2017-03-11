@@ -52,4 +52,4 @@ Utilizing PSWs with typing dynamics can prevent unwelcome users who know the PSW
 
 ![Missing Image](https://github.com/WMBao/homonymPSW/blob/master/image/R2.jpg)
 
-![Missing Image](https://github.com/WMBao/homonymPSW/blob/master/image/R3.jpg)
+![Missing Image](https://github.com/WMBao/homonymPSW/blob/master/image/R3.png)
